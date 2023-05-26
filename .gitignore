@@ -1,2 +1,3 @@
 example/
-docker*
+docker-datalake.html
+.DS_Store
