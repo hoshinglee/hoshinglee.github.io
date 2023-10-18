@@ -24,7 +24,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/akag.png" id=logo>
                 </a>
-                <button class="navbar-toggler bg-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,6 +51,24 @@
     </section>
     <!-- //NAVBAR -->
 
+    <!-- CHATBOT -->
+    <div class="modal fade" id="gradio-bot" tabindex="-1" aria-labelledby="ChatbotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ChatbotModalLabel">
+                Ask my experience...
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <gradio-app src="https://hoshingakag-g-palm-chat.hf.space" initial_height="0px" container="false" autoscroll="true" theme_mode="light"></gradio-app>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
     <!-- WRAPPER -->
     <div id="content-wrapper">
 
@@ -61,6 +79,9 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-10">
                         <h1 class="display-3 fw-bold">I'm Gerard, <br>just a <span class="text-brand glitch">Data Guy<!--span class="auto-type"></span--></span></h1>
+                        <button class="btn btn-cyber chatbot-toggler" data-bs-toggle="modal" data-bs-target="#gradio-bot" data-aos="fade-left" data-aos-delay="300">
+                            <span class="chatwithme-text">Chat with me 💬</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -75,23 +96,21 @@
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
                         <h6 class="text-brand">ABOUT</h6>
-                        <h1 class="mb-4" data-aos="fade-up" data-aos-delay="300">My Experience & Certificates</h1>
+                        <h1 class="mb-4" data-aos="fade-up" data-aos-delay="200">My Experience & Certificates</h1>
                     </div>
                 </div>
 
-                <div class="row gy-5">
-                    <div class="col-lg-6">
+                <div class="row gy-5 d-flex justify-content-between">
+                    <div class="col-lg-7">
                         <div class="row gy-4">
-                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <div class="d-flex">
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Experience</h3>
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                                         <div class="h4 flex-fill fg-white">Senior Associate, Data Scientist</div>
                                         <div class="text-brand mb-2 align-self-end">DBS Bank (2022 - Present)</div>
                                     </div>
-                                    <!-- <h4>Senior Associate, Data Scientist</h4>
-                                    <p class="text-brand mb-2">DBS Bank (2022 - Present)</p> -->
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up">
+                                    <ul class="flex-lg-column mb-2" data-aos="fade-up" data-aos-delay="200">
                                         <li><span class="mb-0">Drive NLP projects using transformer models & statistical approaches</span></li>
                                         <li><span class="mb-0">Maintain & retrain ML models for fraud detection use cases</span></li>
                                         <li><span class="mb-0">Lead the development of data pipelines & dashboards</span></li>
@@ -99,15 +118,13 @@
                                 </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <div class="d-flex">
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                                         <div class="h4 flex-fill fg-white">Consultant, Analytics & Cognitive</div>
                                         <div class="text-brand mb-2 align-self-end">Deloitte (2021 - 2022)</div>
                                     </div>
-                                    <!-- <h4>Consultant, Analytics & Cognitive</h4>
-                                    <p class="text-brand mb-2">Deloitte (2021 - 2022)</p> -->
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up">
+                                    <ul class="flex-lg-column mb-2" data-aos="fade-up" data-aos-delay="200">
                                         <li><span class="mb-0">IFRS17 data engineering project using AWS EMR & Apache Spark</span></li>
                                         <li><span class="mb-0">Data integration project on Azure using ADLS, ADF & Azure Synapse</span></li>
                                         <li><span class="mb-0">Business development POC such as graph database & anomaly detection</span></li>
@@ -115,15 +132,13 @@
                                 </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <div class="d-flex">
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                                         <div class="h4 flex-fill fg-white">Data Anlayst</div>
                                         <div class="text-brand mb-2 align-self-end">Cigna (2018 - 2021)</div>
                                     </div>
-                                    <!-- <h4>Data Anlayst</h4>
-                                    <p class="text-brand mb-2">Cigna (2018 - 2021)</p> -->
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up">
+                                    <ul class="flex-lg-column mb-2" data-aos="fade-up" data-aos-delay="200">
                                         <li><span class="mb-0">Developed data warehouse and ETL pipelines using Microsoft SQL Server</span></li>
                                         <li><span class="mb-0">Created & maintained dashboards for financial KPIs, product sales etc.</span></li>
                                         <li><span class="mb-0">Automated reporting pipelines with Python and 3rd party APIs</span></li>
@@ -133,39 +148,172 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         <div class="row gy-4">
-                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Certificates</h3>
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Databricks</h4>
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up">
-                                        <li><a href="https://credentials.databricks.com/ec326e44-f0ad-4b59-9cc4-bcbd6b2b013c" target="_blank" rel="noopener noreferrer" class="link-custom">Associate Developer for Apache Spark 3.0</a></li>
-                                        <li><a href="https://credentials.databricks.com/9b328097-3041-4748-84fb-596e8e216f1d" target="_blank" rel="noopener noreferrer" class="link-custom">Machine Learning Professional</a> & <a href="https://credentials.databricks.com/7aee0bd9-0323-4187-9d5e-0703b4b1afc9" target="_blank" rel="noopener noreferrer" class="link-custom">Machine Learning Associate</a></li>
-                                        <li><a href="https://credentials.databricks.com/e31a3cc1-bde1-486b-9239-8842f1a5eaff" target="_blank" rel="noopener noreferrer" class="link-custom">Data Engineer Associate</a></li>
-                                    </ul>
-                                </div>
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Certificates</h3>
+                            <div id="certbutton" class="btn-group" role="group" data-aos="fade-up" data-aos-delay="400">
+                                <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseDatabricks" aria-expanded="true" aria-controls="collapseDatabricks">Databricks</button>
+                                <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseAzure" aria-expanded="false" aria-controls="collapseAzure">Azure</button>
+                                <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseOthers" aria-expanded="false" aria-controls="collapseOthers">Others</button>
                             </div>
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Microsoft</h4>
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up">
-                                        <li><a href="https://www.credly.com/badges/e5f390ae-bc51-47d2-b5a5-799a49b4ed86" target="_blank" rel="noopener noreferrer" class="link-custom">Azure Data Engineer Associate</a></li>
-                                        <li><a href="https://www.credly.com/badges/417769bb-442d-4d5d-b880-4d5a87d37f5b" target="_blank" rel="noopener noreferrer" class="link-custom">Azure Data Scientist Associate</a></li>
-                                        <li><a href="https://www.credly.com/badges/c6676b64-b4c6-4361-9da1-4465fab1b5b5" target="_blank" rel="noopener noreferrer" class="link-custom">Azure AI Engineer Associate</a></li>
-                                    </ul>
+                            <div id="cert">
+                                <div class="collapse show multi-collapse" id="collapseDatabricks" data-bs-parent="#cert">
+                                    <div id="carouselCertIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="4000">
+                                                <div class="container-sm"> 
+                                                    <a href="https://credentials.databricks.com/ec326e44-f0ad-4b59-9cc4-bcbd6b2b013c" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/Databricks Certified Associate Developer for Apache Spark 3.0.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Apache Spark 3.0 Developer</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://credentials.databricks.com/9b328097-3041-4748-84fb-596e8e216f1d" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/Databricks Certified Machine Learning Professional.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Databricks ML Professional</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://credentials.databricks.com/e31a3cc1-bde1-486b-9239-8842f1a5eaff" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/Databricks Certified Data Engineer Associate.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Databricks Data Engineer</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCertIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCertIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Others</h4>
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up">
-                                        <li><a href="https://www.credly.com/badges/b9277fde-8d3f-4b05-b06e-36aa58d2b239" target="_blank" rel="noopener noreferrer" class="link-custom">Deep Learning Specialization</a></li>
-                                        <li><a href="https://google.accredible.com/f260ea76-d155-485a-b33a-8756ecc27786" target="_blank" rel="noopener noreferrer" class="link-custom">Google Cloud Certified Professional Machine Learning Engineer</a></li>
-                                        <li><a href="https://www.credly.com/badges/d65042b8-29d6-47a1-b175-67cc425ee7e0" target="_blank" rel="noopener noreferrer" class="link-custom">Professional Scrum Master™ I</a></li>
-                                    </ul>
+                                <div class="collapse multi-collapse" id="collapseAzure" data-bs-parent="#cert">
+                                    <div id="carouselCertIndicators1" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://www.credly.com/badges/e5f390ae-bc51-47d2-b5a5-799a49b4ed86" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-azure-data-engineer-associate.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Azure Data Engineer</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://learn.microsoft.com/api/credentials/share/en-gb/hoshinglee-7835/490C95BE0C11E852?sharingId=1B53F0B638F1121F" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-azure-data-scientist-associate.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Azure Data Scientist</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://www.credly.com/badges/c6676b64-b4c6-4361-9da1-4465fab1b5b5" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-azure-ai-engineer-associate.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Azure AI Engineer</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="collapse multi-collapse" id="collapseOthers" data-bs-parent="#cert">
+                                    <div id="carouselCertIndicators2" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://google.accredible.com/f260ea76-d155-485a-b33a-8756ecc27786" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/GCP Professional Machine Learning Engineer.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>GCP Professional MLE</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://www.credly.com/badges/b9277fde-8d3f-4b05-b06e-36aa58d2b239" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/deep-learning-specialization.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Deep Learning Specialization</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://www.credly.com/badges/d65042b8-29d6-47a1-b175-67cc425ee7e0" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/professional-scrum-master-i-psm-i.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>Professional Scrum Master™ I</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <div class="container-sm">
+                                                    <a href="https://www.credly.com/badges/d65042b8-29d6-47a1-b175-67cc425ee7e0" target="_blank">
+                                                        <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-power-bi-data-analyst-associate.png" alt="...">
+                                                    </a>
+                                                    <div class="carousel-caption">
+                                                        <h4>PowerBI Data Analyst</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +328,7 @@
         <section id="stack" class="full-height px-lg-5">
             <div class="container">
 
-                <div class="row pb-4" data-aos="fade-up">
+                <div class="row pb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-8">
                         <h6 class="text-brand">STACK</h6>
                         <h1>My Tech Stack</h1>
@@ -189,7 +337,7 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-md-4" data-aos="fade-up">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="d-flex align-items-start">
                                 <div class="iconbox rounded-4 me-auto flex-shrink-0">
@@ -207,12 +355,14 @@
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item bg-transparent">Python</li>
                                                     <li class="list-group-item bg-transparent">SQL</li>
+                                                    <li class="list-group-item bg-transparent">Spark</li>
                                                     <li class="list-group-item bg-transparent">Git</li>
                                                     <li class="list-group-item bg-transparent">Bash</li>
                                                     <li class="list-group-item bg-transparent">Pandas</li>
                                                     <li class="list-group-item bg-transparent">Plotly</li>
                                                     <li class="list-group-item bg-transparent">Scikit-learn</li>
                                                     <li class="list-group-item bg-transparent">XGBoost</li>
+                                                    <li class="list-group-item bg-transparent">Airflow</li>
                                                     <li class="list-group-item bg-transparent">PyTorch</li>
                                                     <li class="list-group-item bg-transparent">🤗Transformer</li>
                                                     <li class="list-group-item bg-transparent">MLflow</li>
@@ -226,7 +376,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="d-flex align-items-start">
                                 <div class="iconbox rounded-4 me-auto flex-shrink-0">
@@ -244,10 +394,8 @@
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item bg-transparent">Docker</li>
                                                     <li class="list-group-item bg-transparent">Databricks</li>
-                                                    <li class="list-group-item bg-transparent">Spark</li>
                                                     <li class="list-group-item bg-transparent">Delta Lake</li>
                                                     <li class="list-group-item bg-transparent">MinIO</li>
-                                                    <li class="list-group-item bg-transparent">Airflow</li>
                                                     <li class="list-group-item bg-transparent">Microsoft SQL Server</li>
                                                     <li class="list-group-item bg-transparent">PostgresQL</li>
                                                     <li class="list-group-item bg-transparent">Oracle DB</li>
@@ -263,7 +411,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="d-flex align-items-start">
                                 <div class="iconbox rounded-4 me-auto flex-shrink-0">
@@ -309,7 +457,7 @@
         <section id="project" class="full-height px-lg-5">
             <div class="container">
 
-                <div class="row pb-4" data-aos="fade-up">
+                <div class="row pb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-8">
                         <h6 class="text-brand">PROJECTS</h6>
                         <h1>My Personal Projects</h1>
@@ -318,8 +466,8 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="col-md-4">
+                        <div class="card-custom rounded-4 bg-base shadow-effect" data-aos="fade-left" data-aos-delay="400">
                             <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./assets/images/docker-datalake.png" alt="">
                             </div>
@@ -330,33 +478,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">20 Dec, 2022</p>
-                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                                <a href="#" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">20 Dec, 2022</p>
-                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                                <a href="#" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
 
             </div>
@@ -368,14 +489,14 @@
             <div class="container">
 
                 <div class="row justify-content-center text-center">
-                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up" data-aos-delay="200">
                         <h6 class="text-brand">CONTACT</h6>
                         <h1>Feel free to contact me via</h1>
                     </div>
-                    <ul class="nav justify-content-center social-icons" data-aos="fade-up">
-                        <a href="mailto:hoshinglee.g@gmail.com" target="_blank" rel="noopener noreferrer"><i class="las la-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/gerardleehs/" target="_blank" rel="noopener noreferrer"><i class="lab la-linkedin"></i></a>
-                        <a href="https://github.com/hoshinglee" target="_blank" rel="noopener noreferrer"><i class="lab la-github"></i></a>
+                    <ul class="nav justify-content-center social-icons">
+                        <a href="mailto:hoshinglee.g@gmail.com" target="_blank" rel="noopener noreferrer" data-aos="fade-left" data-aos-delay="400"><i class="las la-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/gerardleehs/" target="_blank" rel="noopener noreferrer"  data-aos="fade-left" data-aos-delay="600"><i class="lab la-linkedin"></i></a>
+                        <a href="https://github.com/hoshinglee" target="_blank" rel="noopener noreferrer" data-aos="fade-left" data-aos-delay="800"><i class="lab la-github"></i></a>
                     </ul>
                 </div>
 
@@ -404,6 +525,8 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/gradio.js" ></script>
+
     <!-- <script src="./assets/js/typed.umd.js"></script> -->
 
     <!-- <script>
