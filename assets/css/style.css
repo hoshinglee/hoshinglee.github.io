@@ -66,6 +66,10 @@
 
 .bg-transparent { background: transparent; }
 
+.px-lg-5 {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--color-base2);
     color: var(--color-body);
@@ -166,7 +170,7 @@ img {
 .navbar {
     background-color: var(--color-base2);
     /* border-bottom: 2px solid var(--yellow); */
-    /* box-shadow: 0 0 20px var(--color-brand); */
+    box-shadow: 0 0 5px var(--color-brand);
 }
 
 .navbar .navbar-brand {
@@ -185,15 +189,15 @@ img {
 
 .navbar-nav .nav-item { 
     font-size: large;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:3px;
+    padding-right:3px;
 }
 
 .navbar-nav .nav-item a.active { 
     font-size: x-large;
     color: var(--color-brand); 
-    padding-left:10px;
-    padding-right:10px;
+    /* padding-left:5px; */
+    /* padding-right:5px; */
 }
 
 .navbar-toggler { border-color: var(--color-base2);}
@@ -201,6 +205,19 @@ img {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,244,23, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.navbar-nav {
+    text-align:center;
+}
+
+.navbar-nav li {
+    display:inline-block;
+}
+
+.navbar-blur {
+    background: transparent;
+    backdrop-filter: blur(10px);
+}  
 
 /* BTN */
 .btn {
@@ -252,6 +269,13 @@ img {
 
 .link-custom:hover::after {
     width: 100%;
+}
+
+/* BADGE */
+
+.badge {
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 /* CARD */
@@ -349,6 +373,11 @@ img {
 /* .chatbot-toggler span {
     position: absolute;
 } */
+
+.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
 
 .modal-open .modal-backdrop {
     backdrop-filter: blur(5px);
