@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -22,7 +23,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-blur">
             <div class="container-fluid flex-lg-row">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/akag.png" id=logo>
+                    <img class="logo" src="assets/images/akag-g-only.png" id=logo>
                 </a>
                 <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,19 +31,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
+                            <a class="nav-link active" href="#home">
+                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#about">About</a>
+                            <a class="nav-link" href="#about">
+                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#stack">Stack</a>
+                            <a class="nav-link" href="#project">
+                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Project</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact">
+                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +58,8 @@
     <!-- //NAVBAR -->
 
     <!-- CHATBOT -->
-    <div class="modal fade" id="gradio-bot" tabindex="-1" aria-labelledby="ChatbotModalLabel" aria-hidden="true">
+    <div class="container">
+      <div class="modal fade" id="gradio-bot" tabindex="-1" aria-labelledby="ChatbotModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -66,7 +73,7 @@
             </div>
           </div>
         </div>
-        
+      </div>
     </div>
 
     <!-- WRAPPER -->
@@ -79,7 +86,7 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-10">
                         <h1 class="display-3 fw-bold">I'm Gerard, <br>just a <span class="text-brand glitch">Data Guy<!--span class="auto-type"></span--></span></h1>
-                        <button class="btn btn-cyber chatbot-toggler" data-bs-toggle="modal" data-bs-target="#gradio-bot" data-aos="fade-left" data-aos-delay="300">
+                        <button class="btn btn-cyber chatbot-toggler" data-bs-toggle="modal" data-bs-target="#gradio-bot" data-aos="fade-in" data-aos-delay="400">
                             <span class="chatwithme-text">Chat with me 💬</span>
                         </button>
                     </div>
@@ -95,71 +102,115 @@
 
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
-                        <h6 class="text-brand">ABOUT</h6>
-                        <h1 class="mb-4" data-aos="fade-up" data-aos-delay="200">My Experience & Certificates</h1>
+                        <h5 class="text-brand">ABOUT</h6>
                     </div>
                 </div>
 
                 <div class="row gy-5 d-flex justify-content-between">
                     <div class="col-lg-7">
                         <div class="row gy-4">
-                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Experience</h3>
+                            <h3 class="mb-2" data-aos="fade-up" data-aos-delay="200">My Experience</h3>
                             <div class="col-12">
-                                <div class="bg-base p-4 rounded-4 shadow-effect" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <div class="bg-base p-4 rounded-4 shadow-effect boundary" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="d-flex">
                                         <div class="h4 flex-fill fg-white">Senior Associate, Data Scientist</div>
                                         <div class="text-brand mb-2 align-self-end">DBS Bank (2022 - Present)</div>
                                     </div>
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up" data-aos-delay="200">
-                                        <li><span class="mb-0">Drive NLP projects using transformer models & statistical approaches</span></li>
-                                        <li><span class="mb-0">Maintain & retrain ML models for fraud detection use cases</span></li>
-                                        <li><span class="mb-0">Lead the development of data pipelines & dashboards</span></li>
+                                    <ul class="flex-lg-column mb-2">
+                                        <li><span class="mb-0">Drive NLP projects using <a href="javascript:;" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="BERT | RoBERTa | FLAN-T5">transformer-based models</a> & <a href="javascript:;" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="tf-idf">statistical approaches</a></span></li>
+                                        <li><span class="mb-0">Develop & maintain ML models using XGBoost for fraud detection</span></li>
+                                        <li><span class="mb-0">Lead the development of data analytics & Tableau dashboards</span></li>
                                     </ul>
+                                    <img class="logo-company" src="assets/images/logo/dbs.png">
                                 </div>
                             </div>
-
+                            <div class="space-sm"></div>
                             <div class="col-12">
-                                <div class="bg-base p-4 rounded-4 shadow-effect" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <div class="bg-base p-4 rounded-4 shadow-effect boundary" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="d-flex">
                                         <div class="h4 flex-fill fg-white">Consultant, Analytics & Cognitive</div>
                                         <div class="text-brand mb-2 align-self-end">Deloitte (2021 - 2022)</div>
                                     </div>
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up" data-aos-delay="200">
+                                    <ul class="flex-lg-column mb-2">
                                         <li><span class="mb-0">IFRS17 data engineering project using AWS EMR & Apache Spark</span></li>
-                                        <li><span class="mb-0">Data integration project on Azure using ADLS, ADF & Azure Synapse</span></li>
+                                        <li><span class="mb-0">Enterprise data warehouse project on Azure using ADF & Synapse Analytics</span></li>
                                         <li><span class="mb-0">Business development POC such as graph database & anomaly detection</span></li>
                                     </ul>
+                                    <img class="logo-company" src="assets/images/logo/dtt.png">
                                 </div>
                             </div>
-
+                            <div class="space-sm"></div>
                             <div class="col-12">
-                                <div class="bg-base p-4 rounded-4 shadow-effect" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <div class="bg-base p-4 rounded-4 shadow-effect boundary" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="d-flex">
                                         <div class="h4 flex-fill fg-white">Data Analyst</div>
                                         <div class="text-brand mb-2 align-self-end">Cigna (2018 - 2021)</div>
                                     </div>
-                                    <ul class="flex-lg-column mb-2" data-aos="fade-up" data-aos-delay="200">
+                                    <ul class="flex-lg-column mb-2">
                                         <li><span class="mb-0">Developed data warehouse and ETL pipelines using Microsoft SQL Server</span></li>
-                                        <li><span class="mb-0">Created & maintained dashboards for financial KPIs, product sales etc.</span></li>
+                                        <li><span class="mb-0">Created & maintained Tableau dashboards for financial KPIs, product sales etc.</span></li>
                                         <li><span class="mb-0">Automated reporting pipelines with Python and 3rd party APIs</span></li>
                                     </ul>
+                                    <img class="logo-company" src="assets/images/logo/cigna.png">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="row gy-4">
-                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Certificates</h3>
-                            <div id="certbutton" class="btn-group" role="group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="row gy-2">
+                            <h3 class="mb-2" data-aos="fade-up" data-aos-delay="200">My Tech Stacks</h3>
+                            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row">
+                                    <ul class="list-group list-group-horizontal">
+                                        <a class="lacon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Python</b><br>PySpark | Airflow"><i class="lab la-python"></i></a>
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Numpy</b>"><i class="devicon-numpy-plain"></i></a>
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Pandas</b>"><i class="devicon-pandas-plain"></i></a>
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>PyTorch</b>"><i class="devicon-pytorch-plain"></i></a>
+                                        <!-- <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>FastAPI</b>"><i class="devicon-fastapi-plain"></i></a> -->
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Bash</b>"><i class="devicon-bash-plain"></i></a>
+                                        <a class="lacon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Git</b>"><i class="lab la-git"></i></a>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <ul class="list-group list-group-horizontal">
+                                        <a class="lacon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>AWS</b><br>S3 | EC2 | Lambda<br>EMR | SageMaker"><i class="lab la-aws"></i></a>
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Azure</b><br>Data Factory<br>Synapse | Databricks"><i class="devicon-azure-plain"></i></a>
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>GCP</b><br>VertexAI | BigQuery"><i class="devicon-googlecloud-plain"></i></a>
+                                        <a class="lacon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Docker</b>"><i class="lab la-docker"></i></a>
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>PostgresQL</b>"><i class="devicon-postgresql-plain"></i></a>
+                                        <a class="devcon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Microsoft SQL Server</b>"><i class="devicon-microsoftsqlserver-plain"></i></a>
+                                        <!-- <a class="lacon-icons" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>R</b>"><i class="lab la-r-project"></i></a> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="col">My Certificates</h3>
+                                <div class="col dropdown d-flex justify-content-end">
+                                    <button class="btn btn-cyber dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Provider
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                      <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDatabricks" aria-expanded="true" aria-controls="collapseDatabricks">Databricks</a></li>
+                                      <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAzure" aria-expanded="true" aria-controls="collapseAzure">Azure</a></li>
+                                      <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#collapseGCP" aria-expanded="true" aria-controls="collapseGCP">Google Cloud</a></li>
+                                      <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOthers" aria-expanded="true" aria-controls="collapseOthers">Others</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div id="certbutton" class="col btn-group" role="group">
                                 <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseDatabricks" aria-expanded="true" aria-controls="collapseDatabricks">Databricks</button>
                                 <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseAzure" aria-expanded="false" aria-controls="collapseAzure">Azure</button>
-                                <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseGCP" aria-expanded="false" aria-controls="collapseGCP">GCP</button>
+                                <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseGCP" aria-expanded="false" aria-controls="collapseGCP">Google Cloud</button>
                                 <button type="button" class="btn btn-cyber" data-bs-toggle="collapse" data-bs-target="#collapseOthers" aria-expanded="false" aria-controls="collapseOthers">Others</button>
-                            </div>
-                            <div id="cert">
+                            </div> -->
+                            <div id="cert" class="row">
                                 <div class="collapse show multi-collapse" id="collapseDatabricks" data-bs-parent="#cert">
-                                    <div id="carouselCertIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="500">
+                                    <div id="carouselCertIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                             <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -172,7 +223,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/Databricks Certified Associate Developer for Apache Spark 3.0.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Apache Spark 3.0 Developer</h4>
+                                                        <h5>Apache Spark 3.0 Developer</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -182,7 +233,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/Databricks Certified Machine Learning Professional.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Databricks ML Professional</h4>
+                                                        <h5>Databricks ML Professional</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -192,7 +243,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/Databricks Certified Data Engineer Associate.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Databricks Data Engineer</h4>
+                                                        <h5>Databricks Data Engineer</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -208,7 +259,7 @@
                                     </div>
                                 </div>
                                 <div class="collapse multi-collapse" id="collapseAzure" data-bs-parent="#cert">
-                                    <div id="carouselCertIndicators1" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="500">
+                                    <div id="carouselCertIndicators1" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                             <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -221,7 +272,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-azure-data-engineer-associate.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Azure Data Engineer</h4>
+                                                        <h5>Azure Data Engineer</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -231,7 +282,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-azure-data-scientist-associate.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Azure Data Scientist</h4>
+                                                        <h5>Azure Data Scientist</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -241,7 +292,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-azure-ai-engineer-associate.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Azure AI Engineer</h4>
+                                                        <h5>Azure AI Engineer</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -257,7 +308,7 @@
                                     </div>
                                 </div>
                                 <div class="collapse multi-collapse" id="collapseGCP" data-bs-parent="#cert">
-                                    <div id="carouselCertIndicators2" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="500">
+                                    <div id="carouselCertIndicators2" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                             <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -269,7 +320,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/GCP Professional Data Engineer.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>GCP Professional Data Engineer</h4>
+                                                        <h5>GCP Professional Data Engineer</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -279,7 +330,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/GCP Professional Machine Learning Engineer.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>GCP Professional MLE</h4>
+                                                        <h5>GCP Professional MLE</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -295,7 +346,7 @@
                                     </div>
                                 </div>
                                 <div class="collapse multi-collapse" id="collapseOthers" data-bs-parent="#cert">
-                                    <div id="carouselCertIndicators3" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="500">
+                                    <div id="carouselCertIndicators3" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                             <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -308,7 +359,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/deep-learning-specialization.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Deep Learning Specialization</h4>
+                                                        <h5>Deep Learning Specialization</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -318,7 +369,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/professional-scrum-master-i-psm-i.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>Professional Scrum Master™ I</h4>
+                                                        <h5>Professional Scrum Master™ I</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -328,7 +379,7 @@
                                                         <img class="d-block w-100" src="./assets/images/cert/microsoft-certified-power-bi-data-analyst-associate.png" alt="...">
                                                     </a>
                                                     <div class="carousel-caption">
-                                                        <h4>PowerBI Data Analyst</h4>
+                                                        <h5>PowerBI Data Analyst</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -352,174 +403,50 @@
         </section>
         <!-- //ABOUT -->
 
-        <!-- STACK -->
-        <section id="stack" class="full-height px-lg-5">
-            <div class="container">
-
-                <div class="row pb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">STACK</h6>
-                        <h1>My Tech Stack</h1>
-                    </div>
-                </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="d-flex align-items-start">
-                                <div class="iconbox rounded-4 me-auto flex-shrink-0">
-                                    <i class="las la-terminal"></i>
-                                </div>
-                                <div class="accordion accordion-flush">
-                                    <div class="accordion-item bg-transparent">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                <h5 class="stack-header">Language & Framework</h5>
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item bg-transparent">Python</li>
-                                                    <li class="list-group-item bg-transparent">SQL</li>
-                                                    <li class="list-group-item bg-transparent">Spark</li>
-                                                    <li class="list-group-item bg-transparent">Airflow</li>
-                                                    <li class="list-group-item bg-transparent">Git</li>
-                                                    <li class="list-group-item bg-transparent">Bash</li>
-                                                    <li class="list-group-item bg-transparent">Pandas</li>
-                                                    <li class="list-group-item bg-transparent">Plotly</li>
-                                                    <li class="list-group-item bg-transparent">Scikit-learn</li>
-                                                    <li class="list-group-item bg-transparent">XGBoost</li>
-                                                    <li class="list-group-item bg-transparent">PyTorch</li>
-                                                    <li class="list-group-item bg-transparent">🤗Transformer</li>
-                                                    <li class="list-group-item bg-transparent">MLflow</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="d-flex align-items-start">
-                                <div class="iconbox rounded-4 me-auto flex-shrink-0">
-                                    <i class="las la-database"></i>
-                                </div>
-                                <div class="accordion accordion-flush">
-                                    <div class="accordion-item bg-transparent">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                <h5 class="stack-header">Software & Database</h5>
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item bg-transparent">Docker</li>
-                                                    <li class="list-group-item bg-transparent">Databricks</li>
-                                                    <li class="list-group-item bg-transparent">Delta</li>
-                                                    <li class="list-group-item bg-transparent">MinIO</li>
-                                                    <li class="list-group-item bg-transparent">Microsoft SQL Server</li>
-                                                    <li class="list-group-item bg-transparent">PostgresQL</li>
-                                                    <li class="list-group-item bg-transparent">Oracle DB</li>
-                                                    <li class="list-group-item bg-transparent">Neo4j</li>
-                                                    <li class="list-group-item bg-transparent">Tableau</li>
-                                                    <li class="list-group-item bg-transparent">Alteryx</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="d-flex align-items-start">
-                                <div class="iconbox rounded-4 me-auto flex-shrink-0">
-                                    <i class="las la-cloud"></i>
-                                </div>
-                                <div class="accordion accordion-flush">
-                                    <div class="accordion-item bg-transparent">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                <h5 class="stack-header">Cloud Engineering</h5>
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseThree" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item bg-transparent">AWS EMR</li>
-                                                    <li class="list-group-item bg-transparent">AWS Lambda</li>
-                                                    <li class="list-group-item bg-transparent">AWS S3</li>
-                                                    <li class="list-group-item bg-transparent">AWS EC2</li>
-                                                    <li class="list-group-item bg-transparent">AWS API Gateway</li>
-                                                    <li class="list-group-item bg-transparent">AWS SageMaker</li>
-                                                    <li class="list-group-item bg-transparent">Azure Data Factory</li>
-                                                    <li class="list-group-item bg-transparent">Azure Data Lake Storage</li>
-                                                    <li class="list-group-item bg-transparent">Azure Synapse Analytics</li>
-                                                    <li class="list-group-item bg-transparent">Azure Machine Learning</li>
-                                                    <li class="list-group-item bg-transparent">Azure Databricks</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- STACK -->
-
         <!-- PROJECTS -->
         <section id="project" class="full-height px-lg-5">
             <div class="container">
 
                 <div class="row pb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-8">
-                        <h6 class="text-brand">PROJECTS</h6>
-                        <h1>My Personal Projects</h1>
+                        <h5 class="text-brand">Projects</h5>
                     </div>
                 </div>
 
-                <div class="row gy-4">
-                    <div class="col-md-4">
-                        <div class="card-custom rounded-4 bg-base shadow-effect" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="mb-2">My Personal Projects</h3>
+                    <div class="card-hover card-margin col-md-4">
+                      <div class="card rounded-4 bg-base" data-aos="fade-up" data-aos-delay="400">
+                        <div class="rounded-4 bg-base">
                             <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./assets/images/llm-genai-ragapp.png" alt="">
                             </div>
                             <div class="card-custom-content p-4">
                                 <p class="text-brand mb-2">LLM | Generative AI</p>
                                 <h5 class="mb-4">Retrieval Augmented Generation application to chat with my experience</h5>
-                                <a href="" target="_blank" rel="noopener noreferrer" class="link-custom" data-bs-toggle="modal" data-bs-target="#gradio-bot">Try it out!</a>
+                                <a href="" target="_blank" rel="noopener noreferrer" class="link-custom" data-bs-toggle="modal" data-bs-target="#gradio-bot">👉🏼 Try it out!</a>
                             </div>
                         </div>
+                      </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card-custom rounded-4 bg-base shadow-effect" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card rounded-4 bg-base" data-aos="fade-up" data-aos-delay="600">
+                          <div class="rounded-4 bg-base">
                             <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./assets/images/docker-datalake.png" alt="">
                             </div>
                             <div class="card-custom-content p-4">
                                 <p class="text-brand mb-2">Docker | Data Architecture</p>
                                 <h5 class="mb-4">Build a poor man's data lakehouse with Docker</h5>
-                                <a href="https://medium.com/@hoshinglee.g/build-a-poor-mans-data-lakehouse-with-docker-502dd422e6fe" target="_blank" rel="noopener noreferrer" class="link-custom">View details</a>
+                                <a href="https://medium.com/@hoshinglee.g/build-a-poor-mans-data-lakehouse-with-docker-502dd422e6fe" target="_blank" rel="noopener noreferrer" class="link-custom">👉🏼 View details</a>
                             </div>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- //BLOG -->
+        <!-- //PROJECTS -->
 
         <!-- CONTACT -->
         <section id="contact" class="full-height px-lg-5">
@@ -527,13 +454,13 @@
 
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-8 pb-4" data-aos="fade-up" data-aos-delay="200">
-                        <h6 class="text-brand">CONTACT</h6>
+                        <h5 class="text-brand">CONTACT</h5>
                         <h1>Feel free to contact me via</h1>
                     </div>
                     <ul class="nav justify-content-center social-icons">
-                        <a href="mailto:hoshinglee.g@gmail.com" target="_blank" rel="noopener noreferrer" data-aos="fade-left" data-aos-delay="400"><i class="las la-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/gerardleehs/" target="_blank" rel="noopener noreferrer"  data-aos="fade-left" data-aos-delay="600"><i class="lab la-linkedin"></i></a>
-                        <a href="https://github.com/hoshinglee" target="_blank" rel="noopener noreferrer" data-aos="fade-left" data-aos-delay="800"><i class="lab la-github"></i></a>
+                        <a href="mailto:hoshinglee.g@gmail.com" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="400"><i class="las la-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/gerardleehs/" target="_blank" rel="noopener noreferrer"  data-aos="fade-up" data-aos-delay="600"><i class="lab la-linkedin"></i></a>
+                        <a href="https://github.com/hoshinglee" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="800"><i class="lab la-github"></i></a>
                     </ul>
                 </div>
 
