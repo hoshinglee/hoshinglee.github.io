@@ -7,6 +7,15 @@
 }
 
 :root {
+    /* --color-body: #373d3e;
+    --color-heading: #171715;
+    --color-base: #ebebeb;
+    --color-base2: #ffffff; */
+    /* --color-brand: #ffee99; */
+    /* --color-brand: #A9EBF7; */
+    /* --color-brand: #42c3d9;
+    --color-brand2: #000000; */
+
     --color-body: #b6cbce;
     --color-heading: #eef3db;
     --color-base: #151515;
@@ -190,7 +199,7 @@ img {
 
 /* NAVBAR */
 .navbar {
-    background-color: var(--color-base2);
+    background-color: var(--color-base);
     /* border-bottom: 2px solid var(--yellow); */
     box-shadow: 0 0 5px var(--color-brand);
 }
@@ -202,7 +211,7 @@ img {
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-brand2)
 }
 
 .navbar .nav-link:hover {
@@ -226,7 +235,11 @@ img {
 .navbar-toggler { border-color: transparent;}
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,244,23, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,244,23, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon.light {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(63,194,217, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-nav {
@@ -250,7 +263,7 @@ img {
 
 .logo-company {
     position: absolute;
-    bottom: -13.5%;
+    bottom: -12%;
     right: -3%;
     height: 180px;
     width: 180px;
@@ -261,6 +274,17 @@ img {
 
 .logo-company:hover {
     transform: scale(1.1);
+}
+
+.theme-toggler-button {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* BTN */
@@ -291,7 +315,7 @@ img {
 .btn-cyber:hover,
 .btn-cyber:focus {
     background-color: var(--color-brand);
-    color: var(--color-base);
+    color: var(--color-base2);
     border-color: var(--color-brand2);
 }
 
@@ -516,5 +540,5 @@ img {
 }
 
 .modal-title {
-    color: var(--color-base)
+    color: var(--color-base2)
 }

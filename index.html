@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
     <!-- METADATA -->
@@ -25,6 +25,9 @@
                 <a class="navbar-brand" href="#">
                     <img class="logo" src="assets/images/akag-g-only.png" id=logo>
                 </a>
+                <a class="theme-toggler-button me-auto">
+                    <i class="las la-star-and-crescent theme-toggler-icon"></i>
+                </a>
                 <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,22 +35,22 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="#home">
-                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</span>
+                                <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">
-                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</span>
+                                <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#project">
-                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Project</span>
+                                <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Project</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">
-                              <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</span>
+                                <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</span>
                             </a>
                         </li>
                     </ul>
@@ -69,7 +72,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <gradio-app src="https://hoshingakag-g-palm-chat.hf.space" initial_height="0px" container="false" autoscroll="true" theme_mode="light"></gradio-app>
+              <gradio-app class="gradio" src="https://hoshingakag-g-palm-chat.hf.space" initial_height="0px" container="false" autoscroll="true" theme_mode="light"></gradio-app>
             </div>
           </div>
         </div>
@@ -113,7 +116,7 @@
                             <div class="col-12">
                                 <div class="bg-base p-4 rounded-4 shadow-effect boundary" data-aos="fade-up" data-aos-delay="200">
                                     <div class="d-flex">
-                                        <div class="h4 flex-fill fg-white">Senior Associate, Data Scientist</div>
+                                        <div class="h4 flex-fill">Senior Associate, Data Scientist</div>
                                         <div class="text-brand mb-2 align-self-end">DBS Bank (2022 - Present)</div>
                                     </div>
                                     <ul class="flex-lg-column mb-2">
@@ -128,7 +131,7 @@
                             <div class="col-12">
                                 <div class="bg-base p-4 rounded-4 shadow-effect boundary" data-aos="fade-up" data-aos-delay="200">
                                     <div class="d-flex">
-                                        <div class="h4 flex-fill fg-white">Consultant, Analytics & Cognitive</div>
+                                        <div class="h4 flex-fill">Consultant, Analytics & Cognitive</div>
                                         <div class="text-brand mb-2 align-self-end">Deloitte (2021 - 2022)</div>
                                     </div>
                                     <ul class="flex-lg-column mb-2">
@@ -143,7 +146,7 @@
                             <div class="col-12">
                                 <div class="bg-base p-4 rounded-4 shadow-effect boundary" data-aos="fade-up" data-aos-delay="200">
                                     <div class="d-flex">
-                                        <div class="h4 flex-fill fg-white">Data Analyst</div>
+                                        <div class="h4 flex-fill">Data Analyst</div>
                                         <div class="text-brand mb-2 align-self-end">Cigna (2018 - 2021)</div>
                                     </div>
                                     <ul class="flex-lg-column mb-2">
@@ -190,11 +193,11 @@
                         <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
                             <div class="d-flex justify-content-between">
                                 <h3 class="col">My Certificates</h3>
-                                <div class="col dropdown d-flex justify-content-end">
+                                <div class="col dropdown d-flex justify-content-end" data-bs-theme="dark">
                                     <button class="btn btn-cyber dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Provider
                                     </button>
-                                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                    <ul class="dropdown-menu dropdown-menu-end">
                                       <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDatabricks" aria-expanded="true" aria-controls="collapseDatabricks">Databricks</a></li>
                                       <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAzure" aria-expanded="true" aria-controls="collapseAzure">Azure</a></li>
                                       <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#collapseGCP" aria-expanded="true" aria-controls="collapseGCP">Google Cloud</a></li>
@@ -210,11 +213,11 @@
                             </div> -->
                             <div id="cert" class="row">
                                 <div class="collapse show multi-collapse" id="collapseDatabricks" data-bs-parent="#cert">
-                                    <div id="carouselCertIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
+                                    <div id="carouselCertIndicators" class="carousel slide" data-bs-theme="light" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="0" class="active carousel-ind" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="1" class="carousel-ind" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators" data-bs-slide-to="2" class="carousel-ind" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active" data-bs-interval="4000">
@@ -261,9 +264,9 @@
                                 <div class="collapse multi-collapse" id="collapseAzure" data-bs-parent="#cert">
                                     <div id="carouselCertIndicators1" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="0" class="active carousel-ind" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="1" class="carousel-ind" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators1" data-bs-slide-to="2" class="carousel-ind" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active" data-bs-interval="4000">
@@ -310,8 +313,8 @@
                                 <div class="collapse multi-collapse" id="collapseGCP" data-bs-parent="#cert">
                                     <div id="carouselCertIndicators2" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="0" class="active carousel-ind" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators2" data-bs-slide-to="1" class="carousel-ind" aria-label="Slide 2"></button>
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item" data-bs-interval="4000">
@@ -346,11 +349,11 @@
                                     </div>
                                 </div>
                                 <div class="collapse multi-collapse" id="collapseOthers" data-bs-parent="#cert">
-                                    <div id="carouselCertIndicators3" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
+                                    <div id="carouselCertIndicators3" class="carousel carousel-dark slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="400">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="0" class="active carousel-ind" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="1" class="carousel-ind" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCertIndicators3" data-bs-slide-to="2" class="carousel-ind" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active" data-bs-interval="4000">
@@ -488,8 +491,8 @@
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/main.js"></script>
     <script type="module" src="./assets/js/gradio.js" ></script>
+    <script src="./assets/js/main.js"></script>
 
     <!-- <script src="./assets/js/typed.umd.js"></script> -->
 
