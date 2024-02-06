@@ -33,13 +33,13 @@ const themes = {
   light: {
     '--color-body': '#373d3e',
     '--color-heading': '#171715',
-    '--color-base': '#ebebeb',
-    '--color-base2': '#ffffff',
+    '--color-base2': '#ebebeb',
+    '--color-base': '#ffffff',
+    '--color-brand': '#124559',
     // '--color-brand': '#42c3d9',
-    '--color-brand': '#5fcff6',
+    // '--color-brand': '#5fcff6',
     // '--color-brand': '#00a8ff',
-    // '--color-brand': '#007bff',
-    // '--color-brand': '#95fcfd',
+    // '--color-brand': '#dcc193',
     '--color-brand2': '#000000',
   },
   dark: {
@@ -91,7 +91,7 @@ const themes = {
       logoicon.forEach(element => {
         element.classList.toggle('light');
         if(element.classList.contains('light')){
-          element.src = "assets/images/akag-g-only-light.png";
+          element.src = "assets/images/akag-g-only.png";
         }else{
           element.src = "assets/images/akag-g-only.png";
         };
