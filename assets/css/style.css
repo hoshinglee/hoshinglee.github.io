@@ -75,6 +75,10 @@
 
 .bg-transparent { background: transparent; }
 
+.big-sec {
+    overflow-y: hidden;
+}
+
 .px-lg-5 {
     overflow-x: hidden;
 }
