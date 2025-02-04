@@ -68,12 +68,12 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="ChatbotModalLabel">
-                Ask my experience below
+                Chat with my experience below
               </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <gradio-app class="gradio" src="https://hoshingakag-g-palm-chat.hf.space" initial_height="0px" container="false" autoscroll="true" theme_mode="light"></gradio-app>
+              <gradio-app class="gradio" src="https://hoshingakag-chat-exp-2025.hf.space" initial_height="0px" container="false" autoscroll="false" theme_mode="light"></gradio-app>
             </div>
           </div>
         </div>
@@ -419,7 +419,7 @@
 
                 <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="mb-2">My Personal Projects</h3>
-                    <div class="card-hover card-margin col-md-4">
+                    <div class="card-hover card-margin col-sm">
                       <div class="card rounded-4 bg-base" data-aos="fade-up" data-aos-delay="400">
                         <div class="rounded-4 bg-base">
                             <div class="card-custom-image rounded-4">
@@ -433,7 +433,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="card-hover card-margin col-sm">
                         <div class="card rounded-4 bg-base" data-aos="fade-up" data-aos-delay="600">
                           <div class="rounded-4 bg-base">
                             <div class="card-custom-image rounded-4">
@@ -443,6 +443,20 @@
                                 <p class="text-brand mb-2">Docker | Data Architecture</p>
                                 <h5 class="mb-4">Build a poor man's data lakehouse with Docker</h5>
                                 <a href="https://medium.com/@hoshinglee.g/build-a-poor-mans-data-lakehouse-with-docker-502dd422e6fe" target="_blank" rel="noopener noreferrer" class="link-custom">👉🏼 View details</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-hover card-margin col-sm">
+                        <div class="card rounded-4 bg-base" data-aos="fade-up" data-aos-delay="600">
+                          <div class="rounded-4 bg-base">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/tableau-demo-2.jpeg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <p class="text-brand mb-2">Tableau | Data Visualization</p>
+                                <h5 class="mb-4">Back in 2021, a Tableau demonstration for portfolio</h5>
+                                <a href="https://public.tableau.com/app/profile/hoshing.akag/viz/Presentation_16236899103910/ClaimsDashboard" target="_blank" rel="noopener noreferrer" class="link-custom">👉🏼 View dashboard</a>
                             </div>
                           </div>
                         </div>
@@ -492,7 +506,7 @@
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
-    <script type="module" src="./assets/js/gradio.js" ></script>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/5.14.0/gradio.js"></script>
     <script src="./assets/js/main.js"></script>
 
     <!-- <script src="./assets/js/typed.umd.js"></script> -->
