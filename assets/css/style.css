@@ -6,6 +6,14 @@
     src: url(../fonts/Oxanium.woff2) format('woff2');
 }
 
+@font-face 
+{
+    font-family: Cyberpunk;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+    src: url(../fonts/Cyberpunk.otf) format('otf');
+}
+
 :root {
     /* --color-body: #373d3e;
     --color-heading: #171715;
@@ -88,6 +96,8 @@ body {
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
 }
+
+.modal-open, body {overflow: inherit !important;}
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
@@ -208,7 +218,12 @@ img {
     box-shadow: 0 0 5px var(--color-brand);
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand p {
+    font-family: Cyberpunk;
+    font-size: 3.1rem;
+    color: var(--color-brand);
+    margin: -0.5rem 0;
+    margin-top: -15px;
     margin-left: 10px;
 }
 
@@ -297,23 +312,10 @@ img {
     font-weight: 700;
 }
 
-.btn-brand {
-    background-color: var(--color-brand);
-    border-color: var(--color-brand);
-    color: var(--color-base);
-}
-
-.btn-brand:hover,
-.btn-brand:focus {
-    background-color: var(--color-brand2);
-    color: var(--color-base);
-    border-color: var(--color-brand2);
-}
-
 .btn-cyber {
     background-color: var(--color-base2);
-    border-color: var(--color-brand2);
     color: var(--color-brand2);
+    border-color: var(--color-brand2);
 }
 
 .btn-cyber:hover,
@@ -524,8 +526,37 @@ img {
 }
 
 /* CHATBOT & MODAL */
+#chatwithme-button::before,
+#chatwithme-button::after {
+    content: '';
+    position: absolute;
+    inset: -0.2rem;
+    background: linear-gradient(
+        var(--gradient-angle),
+        /* #37ebf3,
+        #fdf500,
+        #9370db */
+        var(--color-brand),
+        var(--color-base)
+        /* var(--color-heading) */
+        );
+    border-radius: inherit;
+    z-index: -2;
+    filter: blur(0.4rem);
+}
+
+#chatwithme-button::after {
+    animation: rotation 5s linear infinite;
+}
+
+#chatwithme-button:hover::before,
+#chatwithme-button:hover::after {
+    animation: rotation 1.5s linear infinite;
+    inset: -0.2rem;
+}
+
 .chatbot-toggler {
-    font-size: x-large;
+    font-size: 140%;
 }
 
 .modal-open {
